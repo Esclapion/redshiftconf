@@ -1,7 +1,7 @@
 # Maintainer: esclapion <esclapion[at]gmail[dot]com>
 
 pkgname=redshiftconf
-pkgver=2.0
+pkgver=2.1
 pkgrel=1
 pkgdesc="redshift configuration tool (Qt5)"
 url=https://forum.manjaro.org/index.php?topic=22999.0
