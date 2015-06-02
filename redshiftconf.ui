@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>redshiftconf</class>
+ <widget class="QWidget" name="redshiftconf">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>344</width>
+    <height>331</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Redshift configuration tool</string>
+  </property>
+  <property name="locale">
+   <locale language="C" country="AnyCountry"/>
+  </property>
+  <layout class="QFormLayout" name="formLayout">
+   <property name="labelAlignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+   <item row="0" column="0">
+    <widget class="QLabel" name="labLat">
+     <property name="text">
+      <string>Latitude :</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QDoubleSpinBox" name="valLat">
+     <property name="toolTip">
+      <string>Your current latitude, in degrees, given as floating point number, towards north and south, with negative number representing south.</string>
+     </property>
+     <property name="accelerated">
+      <bool>true</bool>
+     </property>
+     <property name="prefix">
+      <string/>
+     </property>
+     <property name="suffix">
+      <string comment="AA" extracomment="K">°</string>
+     </property>
+     <property name="minimum">
+      <double>-90.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>90.000000000000000</double>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="labLong">
+     <property name="text">
+      <string>Longitude :</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QDoubleSpinBox" name="valLong">
+     <property name="toolTip">
+      <string>Your current longitude, in degrees, given as floating point number, towards west and east, with negative number representing west.</string>
+     </property>
+     <property name="accelerated">
+      <bool>true</bool>
+     </property>
+     <property name="suffix">
+      <string>°</string>
+     </property>
+     <property name="minimum">
+      <double>-180.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>180.000000000000000</double>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="labDct">
+     <property name="text">
+      <string>Day color temperature :</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="labNct">
+     <property name="text">
+      <string>Night color temperature :</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QSpinBox" name="valDct">
+     <property name="toolTip">
+      <string>Color temperature in degrees Kelvin (between 2000 and 10000) to set at daytime.</string>
+     </property>
+     <property name="accelerated">
+      <bool>true</bool>
+     </property>
+     <property name="suffix">
+      <string>K</string>
+     </property>
+     <property name="minimum">
+      <number>2000</number>
+     </property>
+     <property name="maximum">
+      <number>10000</number>
+     </property>
+     <property name="singleStep">
+      <number>10</number>
+     </property>
+     <property name="value">
+      <number>6000</number>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="QSpinBox" name="valNct">
+     <property name="toolTip">
+      <string>Color temperature in degrees Kelvin (between 2000 and 10000) to set at night.</string>
+     </property>
+     <property name="accelerated">
+      <bool>true</bool>
+     </property>
+     <property name="suffix">
+      <string>K</string>
+     </property>
+     <property name="minimum">
+      <number>2000</number>
+     </property>
+     <property name="maximum">
+      <number>10000</number>
+     </property>
+     <property name="singleStep">
+      <number>10</number>
+     </property>
+     <property name="value">
+      <number>5500</number>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <spacer name="verticalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="6" column="0">
+    <widget class="QLabel" name="labDbri">
+     <property name="text">
+      <string>Day brightness :</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="1">
+    <widget class="QDoubleSpinBox" name="valDbri">
+     <property name="toolTip">
+      <string>Screen brightness (between 0.1 and 1.0) to apply during the day.</string>
+     </property>
+     <property name="accelerated">
+      <bool>true</bool>
+     </property>
+     <property name="minimum">
+      <double>0.100000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>1.000000000000000</double>
+     </property>
+     <property name="singleStep">
+      <double>0.010000000000000</double>
+     </property>
+     <property name="value">
+      <double>1.000000000000000</double>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="0">
+    <spacer name="verticalSpacer_3">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="9" column="0">
+    <widget class="QPushButton" name="ButTest">
+     <property name="toolTip">
+      <string>This allows to try the temperature and brightness values chosen for the day.</string>
+     </property>
+     <property name="text">
+      <string>       Test       </string>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="1">
+    <widget class="QPushButton" name="butConf">
+     <property name="toolTip">
+      <string>This will write a config file to your system and exit the application.</string>
+     </property>
+     <property name="text">
+      <string>Configure</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="0">
+    <widget class="QLabel" name="labNbri">
+     <property name="text">
+      <string>Night brightness :</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="1">
+    <widget class="QDoubleSpinBox" name="valNbri">
+     <property name="toolTip">
+      <string>Screen brightness (between 0.1 and 1.0) to apply during the night.</string>
+     </property>
+     <property name="accelerated">
+      <bool>true</bool>
+     </property>
+     <property name="minimum">
+      <double>0.100000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>1.000000000000000</double>
+     </property>
+     <property name="singleStep">
+      <double>0.010000000000000</double>
+     </property>
+     <property name="value">
+      <double>1.000000000000000</double>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

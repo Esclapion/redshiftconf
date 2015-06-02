@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=2.0
+Name=Redshiftconf
+Comment=Redshift configuration tool
+Comment[fr]=Outil de configuration de redshift
+Exec=redshiftconf
+Icon=redshift
+Terminal=false
+Type=Application
+Categories=Utility;
+
