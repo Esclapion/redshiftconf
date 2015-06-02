@@ -10,7 +10,7 @@ license=(GPL)
 depends=(redshift qt5-base)
 makedepends=(qt5-tools)
 source=(http://esclapion.free.fr/AUR/redshiftconf-$pkgver.tar.gz)
-md5sums=('3aff4514b65582bbc7d7dffa13d135fa')
+md5sums=('a6ea5aa7d717706d6b36ea7496fc4173')
 
 package() {
     cd $srcdir
