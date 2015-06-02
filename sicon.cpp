@@ -45,9 +45,7 @@ void sicon::redclick(QSystemTrayIcon::ActivationReason reason)
         {
             comm.start("killall redshift");
             comm.waitForFinished();
-            icon->setVisible(false);
             icon->setIcon(QIcon("/usr/share/icons/hicolor/scalable/apps/redshift-status-off.svg"));
-            icon->setVisible(true);
             redshiftOn = 1;
 
         }
@@ -71,9 +69,7 @@ void sicon::redclick(QSystemTrayIcon::ActivationReason reason)
                 file.close();
                 comm.startDetached(redshiftComm);
                 comm.waitForStarted();
-                icon->setVisible(false);
                 icon->setIcon(QIcon("/usr/share/icons/hicolor/scalable/apps/redshift-status-on.svg"));
-                icon->setVisible(true);
                 redshiftOn = 0;
             }
             else
