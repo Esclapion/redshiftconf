@@ -5,6 +5,7 @@
 #include <QDir>
 #include <QMessageBox>
 #include <QTest>
+#include <QDesktopWidget>
 
 sicon::sicon(QObject *parent) : QObject(parent)
 {
@@ -86,6 +87,10 @@ void sicon::redclick(QSystemTrayIcon::ActivationReason reason)
 
 void sicon::redconf()
 {
+    int moveX, moveY;
+    moveX = (QApplication::desktop()->width() - w.width()) / 2;
+    moveY = (QApplication::desktop()->height() - w.height()) / 2;
+    w.move(moveX, moveY);
     w.show();
 }
 
